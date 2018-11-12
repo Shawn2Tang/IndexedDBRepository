@@ -5,3 +5,4 @@
 /configs
 /node_modules
 /src/Scripts/Tests/IndexedDBSuite
+/.vs

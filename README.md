@@ -1,0 +1,1 @@
+IndexedDB repository is a library of persist and retrieve data from client IndexedDB.
