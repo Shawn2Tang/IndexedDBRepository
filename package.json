@@ -1,0 +1,42 @@
+{
+  "name": "indexeddb_repository",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "echo": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf ./dist/Scripts && node node_modules/typescript/bin/tsc",
+    "test": "karma start ./configs/karma.conf.js",
+    "test-run": "karma run ./configs/karma.conf.js",
+    "archive": "cpx \"src/**/*.ts\" \"../MyWork/src\" --watch",
+    "boilerplate": "node -e \"require('./boilerplate').buildBoilerplate()\"",
+    "clear": "rimraf ./dist/Scripts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.1.2",
+    "@types/mocha": "^2.2.48",
+    "@types/node": "^10.12.5",
+    "chai": "^4.1.2",
+    "cpx": "^1.5.0",
+    "karma": "^2.0.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage": "^1.1.1",
+    "karma-htmlfile-reporter": "^0.3.5",
+    "karma-mocha": "^1.3.0",
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-requirejs": "^1.1.0",
+    "karma-typescript": "^3.0.12",
+    "mocha": "^5.0.0",
+    "requirejs": "^2.3.5",
+    "source-map": "^0.7.0",
+    "typescript": "^2.7.1"
+  },
+  "dependencies": {
+    "karma-sinon": "^1.0.5"
+  }
+}

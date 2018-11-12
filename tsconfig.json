@@ -1,0 +1,43 @@
+{
+    "compileOnSave":true,
+    "compilerOptions":{
+        "module":"amd",
+        "target":"ES5",            //The result of tsc processed will be transfered by babel into ES5
+        "moduleResolution": "node",//solve error TS2307: Cannot find module 'redux'.
+        "jsx": "react",
+        "allowSyntheticDefaultImports": true, //solve error TS1192: has no default export
+        "isolatedModules": false,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "declaration": false,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "noImplicitAny": false,
+        "noLib": false,
+        "suppressExcessPropertyErrors": true,
+        "suppressImplicitAnyIndexErrors":true,
+        "sourceMap": true,
+        "rootDir":"./src/Scripts/IndexedDB",
+        "outDir": "./dist/Scripts",
+        "typeRoots" : ["./node_modules/@types"],
+        "types": [
+            "node"
+        ],
+         "lib":[
+             "dom",    //error TS2304: Cannot find name 'document'
+             "es2015"  //error TS2304: Cannot find name 'PropertyKey'. --PropertyKey is in es2015 library
+        ]
+    }
+    ,"include":[
+        "./src/**/*.js",
+        "./src/Scripts/IndexedDB/**/*.ts"
+    ]
+    ,"excluse":[
+        "./dist/**/*",
+        "./node_modules/**/*",
+        "./configs/**/*",
+        "./backup/**/*",
+        "./ref/**/*",
+        "./static/**/*"
+    ]
+}
